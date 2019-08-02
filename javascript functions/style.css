@@ -1,0 +1,54 @@
+.container {
+    border-radius:5px;
+    width:300px;
+    height:100%;
+    margin:20px;
+    padding:20px;
+    background-color:#98c1fd;
+}
+
+/*label*/
+
+.col-30 {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/*input box*/
+
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+}
+
+input[type=text], input[type=number] {
+    width:100%;
+    
+}
+
+/*buttons*/
+
+.btn {
+    width:50%;
+    align-content: center;
+    border-radius:5px;
+    border-color:#fff998;
+    background-color:#fdf698;
+    padding:3px 5px;
+}
+
+#total {
+    margin-top:15px;
+}
+
+/*summary*/
+.summary{
+    line-height:10px;
+}
+
+/*error message*/
+.msg1, .msg2, .msg3 {
+    color:red;
+}

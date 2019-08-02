@@ -5,33 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cashier Java</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="">Product</label>
-    <input type="text" id="product"><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-30">
+                <label for="">Product:</label> 
+            </div>
+            <div class="col-70">
+                <input type="text" id="product">
+            </div>
+        </div>
 
-    <label for="">Price:</label>
-    <input type="text" id="price"><br><br>
+        <div class="row">
+            <div class="col-30">
+                <label for="">Price:</label> 
+            </div>
+            <div class="col-70">
+                <input type="text" id="price">
+            </div>
+        </div>
 
-    <label for="">Quantity:</label>
-    <input type="number" id="quantity"><br><br>
+        <div class="row">
+            <div class="col-30">
+                <label for="">Quantity:</label>
+            </div>
+            <div class="col-70">
+                <input type="number" id="quantity">
+            </div>
+        </div>
 
-    <button onclick="getTotal()">Get Total</button>
-    <p id="total">Total: </p>
+        <button class="btn" id="total" onclick="getTotal()">Get Total</button><br>
+            <h4>Total: <span id="result1"></span></h4>
+            <p class="msg1"></p>
+            <p class="msg2"></p>
 
-    <label for="">Input Cash:</label>
-    <input type="number" id="cash"><br><br>
+        <div class="row">
+            <div class="col-30">
+                <label for="">Input Cash:</label>
+            </div>
+            <div class="col-70">
+                <input type="number" id="cash">
+                <p class="msg3"></p>
+            </div>
+        </div>
 
-    <button onclick="save()">Save</button>
-    <p>Summary:</p>
+        <button class="btn" id="save" onclick="save()">Save</button>
+        <h4>Summary:</h4>
+        <div class="summary">
+            <p>Product: <span id="SumProduct"></span></p>
+            <p>Price: <span id="SumPrice"></span></p>
+            <p>Quantity: <span id="SumQty"></span></p>
+            <p>Total: <span id="SumTotal"></span></p>
+            <p>Cash: <span id="SumCash"></span></p>
+            <p>Change: <span id="SumChange"></span></p>
+        </div>
+    </div>
 
-    <p id="product">Product:</p>
-    <p id="">Price:</p>
-    <p id="">Quantity:</p>
-    <p id="">Total:</p>
-    <p id="">Cash:</p>
-    <p id="change">Change:</p>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
